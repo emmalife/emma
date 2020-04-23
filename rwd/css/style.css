@@ -280,6 +280,10 @@ html,body{
         transform: scale(0.65);
     }
 
+    .homeicon{
+        display: none;
+    }
+
 
 
 
