@@ -1,0 +1,120 @@
+*{
+    /*border:1px solid ;*/
+    font-family: 'Baloo Tamma 2','Noto Sans TC',;
+    color: #333;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+
+
+}
+
+
+.nav-item a{
+    font-family: 'Baloo Tamma 2';
+    font-size: 20px;
+    color:#333;
+    border-bottom:5px solid #b7d6e8;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 69px;
+    height: 63px;
+    margin: 5px;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    
+                ;
+}
+
+.start{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pic{
+ width: 100%;
+ height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*手機尺寸的顯示*/
+
+   @media (max-width:450px){
+
+    .navbar{
+        background-color: #b7d6e8;
+    }
+
+    .logo{
+        background-color: #fff;
+    }
+    
+    i{
+        color:#fff;
+    }
+
+    .nav-item a{
+        color:#fff;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+      }
+    
+
+
+   }
+
+
+
+/*顏色控管*/
+
+.blue-font{
+   color:#72a7d3;
+}
+
+.white-font{
+    color:#fff;
+ }
+
+.mainfont{
+    font-family: 'Baloo Tamma 2';
+}
+
+/*------------------固定圖標設定----------------------*/
+.itemicon {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #b7d6e8;;
+    border-radius: 100%;
+
+}

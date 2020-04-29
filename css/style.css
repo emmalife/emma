@@ -1,401 +1,187 @@
-/*------------------全部調整區----------------------*/
 *{
-    font-family: monospace,微軟正黑體;
-    /*border: 1px solid;*/
-    position: relative;
+   /* border:1px solid ;*/
+    font-family: 'Baloo Tamma 2','Noto Sans TC',;
+    color: #333;
     box-sizing: border-box;
+
 }
 
 html,body{
     width: 100%;
     height: 100%;
-
-}
-
-#skrollr-body{
-    overflow: hidden;
-}
-
-
-
-/*------------------顏色控制----------------------*/
-.text-h2-60{
-    color: #333333;
-    font-size:60px
-    
-}
-
-.text-h2-30{
-    color: #333333;
-    font-size:30px;
-    font-weight: 600;  
-    font-family: 微軟正黑體;
-}
-
-.text-h2-30-bg{
-    color: #333333;
-    font-size:30px;
-    font-weight: 600;  
-    font-family: 微軟正黑體;
-    line-height: 30px;
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      background-color: rgba(255,255,255,0.8);
-}
-
-
-.text-h3-20{
-    color: #333333;
-    font-size:20px; 
-}
-
-.text-p-15{
-    color: #333333;
-    font-size:15px
-    
-}
-
-.text-p-15-white{
-    color: #FCFCFC;
-    font-size:15px;
-    font-weight: 600;
-    
-    
-}
-
-.text-p-15now-white{
-    color: #FCFCFC;
-    font-size:15px;
-    font-weight: 400;
-    
-    
-}
-
-.text-p-18-orange{
-    color: #FF9D76;
-    font-size:18px
-    
-}
-
-.bg-nav{
-    background-color: rgb(255, 233, 224);
-}
-
-.bg-orange{
-    background-color: #FF9D76;
-}
-
-
-.bg-white{
-    background-color: #FCFCFC;
-}
-
-
-
-.btn2-yellow{
-    color: #fff;
-    background-color: #FFD369;
-}
-
-.btn2-yellow:hover{
-    background-color: #FFBD29;
-    color: #fff;
-    text-decoration: none;
-}
-
-.btn1-orange{
-    color: #fff;
-    background-color: #FF9D76;
-}
-
-.btn1-orange:hover{
-    background-color: #FF7B4D;
-    color: #fff;
-    text-decoration: none;
-}
-
-
-
-
-
-
-/*------------------手機尺寸調整----------------------*/
-
-@media (min-width:768px){    /*大尺寸螢幕*/
-    .padjust{
-        padding:150px;
-    }
-
-    .top{
-        padding: 150px;
-        padding-top: 250px;
-
-    }
-
-    .topimg{
-        background-image: url(https://live.staticflickr.com/65535/49776653522_a2132592a5_o_d.png);
-        background-repeat: no-repeat;
-        background-position: right 0% bottom 10%;
-    }
-
-    .skillbar{
-        width: 350px;
-        height: 20px;
-        border-radius: 50px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        border:1px solid  #FF9D76;
-    }
-    
-    .bardec{
-        width: 300px;
-        height: 10px;
-        background-color:#FF9D76;
-        border-radius: 50px;
-    
-    }
-
-    .bardec-good{
-        width: 290px;
-    }
-
-    .bardec-better{
-        width: 250px;
-    }
-
-    .bardec-fine{
-        width: 220px;
-    }
-
-
-
-
-    .resumepic{
-        transform: scale(0.8);
-    }
-
-    .contacttext img{
-        transform: scale(0.8);
-    }
-
-    .vcenter{
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .allview{
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    .minjust{
-        margin-left: 0px;
-    }
-    
-
-
-
-
-
-
-
+    margin: 0px;
 
 
 }
 
-@media (max-width:768px){    /*小尺寸螢幕*/
-     .padjust{
-        padding:0px;
-        padding-top: 80px;
-    }
 
-    .top{
-        padding: 20px;
-        padding-top: 200px;
-
-    }
-
-    .topimg{
-        background-image: url(https://live.staticflickr.com/65535/49776653522_a2132592a5_o_d.png);
-        background-repeat: no-repeat;
-        background-position: right 0% bottom 10%;
-        background-size:50% ;
-
-    }  
-
-    .toptext{
-        transform: scale(0.8);
-        padding: 0px;
-    }
-
-    .toptext h2{
-        font-size: 45px;
-
-    }
-
-
-
-    .skillbar{
-        width: 250px;
-        height: 20px;
-        border-radius: 50px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        border:1px solid  #FF9D76;
-
-    }
-    
-    .bardec{
-        width: 200px;
-        height: 10px;
-        background-color:#FF9D76;
-        border-radius: 50px;
-    
-    }
-
-    .minjust{
-        margin-left: 13px;
-    }
-
-    .bardec-good{
-        width: 200px;
-    }
-
-    .bardec-better{
-        width: 160px;
-    }
-
-    .bardec-fine{
-        width: 140px;
-    }
-
-    .resumepic{
-        padding: 30px;
-        transform: scale(0.65);
-    }
-    
-    .contacttext img{
-        transform: scale(0.65);
-    }
-
-    .homeicon{
-        display: none;
-    }
-
-
-
-
-
-  
-
-
+.nav-item a{
+    font-family: 'Baloo Tamma 2';
+    font-size: 20px;
+    color:#333;
+    border-bottom:5px solid #b7d6e8;
+    box-sizing: border-box;
 }
 
-/*------------------格式調整區----------------------*/
+.logo{
+    width: 69px;
+    height: 63px;
+    margin: 5px;
+}
 
 
-.contactlabel{
-    float: left;
+.banner{
     width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg,rgb(253, 253, 253) 50%,transparent 50%),
+                url("https://images.pexels.com/photos/1831236/pexels-photo-1831236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") right center / auto 100%;
+}
+
+.start{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textarea{
+ width: 50%;
+ 
 }
 
 
-.allcenter{
+.textarea h1,h3{
+    font-family: 'Baloo Tamma 2', cursive;
+    padding: 15px;
+    
+   }
+
+.mouse{
+    position: absolute;
+    bottom:3%;
+    left:50%;
+    transform: scaleX(-50%);
+    width: 20px;
+    height: 30px;
+    border-radius:8px;
+    border:2px solid #333;
+
+}
+
+.movedown{
+    width: 2px;
+    height: 10px;
+    position: absolute;
+    background-color: #333;
+    left: 45%;
+    top:2%;
+    animation: move 1s infinite;
+}
+
+.banner1{
+    width: 100%;
+
+
+}
+
+.just{
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+
+.just h5{
+    font-family: 'Noto Sans TC';
+    line-height: 1.8;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.abouttext{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.mjust{
-    margin: 0px;
+
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
 }
 
-
-
-
-
-
-
-/*------------------固定圖標設定----------------------*/
-.homeicon {
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-    background-color: lightcoral;
-    border-radius: 100%;
-    position: fixed;
-    right:5%;
-    bottom:10%;
+.skillicon{
+    width: 20%;
 }
 
-.itemicon {
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-    background-color: lightcoral;
-    border-radius: 100%;
-    position: fixed;
-    right:5%;
-    bottom:5%;
+.skilldec{
+    width: 70%;
+    margin-left: 2%;
+
 }
 
-
-/*------------------作品集單一頁面設定----------------------*/
-
-.item1{
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+.gooddec{
+    width: 80%;
 }
 
-.item1p{
-    width: 250px;
-    height: 100px;
-    font-size: 100px;
-    line-height: 100px;
+.finedec{
+    width: 70%;
+}
+
+.litdec{
+    width: 60%;
+}
+
+.skilldec h5{
+    padding: 0px;
+    font-family: 'Baloo Tamma 2';
+    
+
+}
+
+.skillbar{
+    border:1px solid #333;
+    width: 100%;
+    height: 22px;
+    border-radius: 20px;
+}
+
+.bardec{
+    background-color: #72a7d3;
+
+    height: 16px;
+    border-radius: 15px;
+    margin: 2px 2px;
+}
+
+.jobtext h5 {
+    font-family: 'Noto Sans TC';
     font-weight: 600;
-    color:#fff;
-    text-shadow: 1px 2px #e2d5f5 ;
+    line-height: 1.8;
+    font-size: 30px;
+    padding: 0px;
 }
 
-.pic{
-    position: absolute;
-    padding: 90px;
+.jobtext p {
+    font-family: 'Baloo Tamma 2';
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 0px;
+
 }
 
-.imgscale86{
-    transform: scale(0.86);
+.jobtext h3 {
+    font-family: 'Noto Sans TC';
+    line-height: 1.8;
+    font-size: 20px;
+    padding: 0px;
+
 }
 
-.imgscale9{
-    transform: scale(0.9);
-}
+.jobbor{
+    border-top:2px solid rgba(0,0,0,0.5);
 
-.imgscale79{
-    transform: scale(0.79);
-}
-
-
-.item2{
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(-20deg, #bdc2e8 0%, #e6dee9 100%);
-}
-
-.item3{
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(0deg, #ffbca9 0%, #f6d365 100%);
 }
 
 
@@ -403,3 +189,87 @@ html,body{
 
 
 
+
+
+/*手機尺寸的顯示*/
+
+   @media (max-width:450px){
+
+    .navbar{
+        background-color: #b7d6e8;
+    }
+
+    .logo{
+        background-color: #fff;
+    }
+    
+    i{
+        color:#fff;
+    }
+
+    .nav-item a{
+        color:#fff;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+      }
+    
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background: 
+                    url("https://images.pexels.com/photos/1831236/pexels-photo-1831236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center center / auto 100%;
+    }
+    .textarea{
+        width: 80%;
+        background-color: rgba(255,255,255,0.5);
+        text-align: center;
+        
+       }
+
+    .textarea h1{
+        font-size: 27px;
+        padding: 10px;
+        padding-bottom: 0px;
+        
+       }
+    .textarea h3{
+        font-size: 20px;
+        padding: 10px;
+        padding-top: 0px;
+        
+      }
+
+    .skilldec{
+        width: 70%;
+        margin-left: 12%;
+    
+    }
+    
+
+   }
+
+/*動畫*/
+
+@keyframes move{
+    0%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+
+/*顏色控管*/
+
+.blue-font{
+   color:#72a7d3;
+}
+
+.mainfont{
+    font-family: 'Baloo Tamma 2';
+}
