@@ -1,0 +1,266 @@
+*{
+    /*border:1px solid ;*/
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+
+    background-color: #1b262c;
+    color:#333;
+}
+
+.conjust{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.h2just{
+    font-size: 25px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 25px;  
+}
+
+
+.card{
+    width: 300px;
+    height: 450px;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    background-color:transparent;
+    cursor: pointer;
+
+    border:0px;
+
+}
+
+.top{
+    width: 100%;
+    height: 315px;
+    position: absolute;
+    top:0px;
+    background-color: #f1d6ab;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#switch:checked~* .circle{
+    transform: scale(0.8);
+}
+
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    right:-100px;
+    top:-100px;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    transition: 0.5s;
+}
+
+#switch:checked~* .imgshoe img{
+    transform: translateY(-50px);
+}
+
+.imgshoe img{
+    transition: 0.5s;
+}
+
+.imgshoe{
+    transform: scale(0.6);
+    position: absolute;
+    left:-30%;
+    z-index: 50;
+
+}
+
+.bottom{
+    width: 100%;
+    height:135px;
+    position: absolute;
+    bottom:0px;
+    text-align: center;
+
+    background-color: #f1d6ab;
+    opacity: 0;
+
+    transition: 0.5s;
+
+   
+}
+
+.bottom h3{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 3%;
+    vertical-align:middle;
+    margin: 0px;
+
+}
+
+.bottom .sizetext{
+    display: inline-block;
+    width: 150px;
+    
+}
+
+.bottom .sizetext span{
+    display: inline-block;
+    text-align: center;
+    margin-right: 0.5px;
+    width: 25px;
+    height: 25px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color:#fff;
+    background-color: #1b262c;
+    border-radius: 8px;
+
+}
+
+.bottom .sizetext span:hover{
+    background-color: #c70d3a;
+    color:#fff;
+
+}
+
+.bottom .colortext{
+    display: inline-block;
+    width: 150px;
+    margin-top: 10px;
+    line-height: 30px;
+    
+
+    
+}
+
+.bottom .colortext span{
+    display: inline-block;
+    text-align: center;
+    margin-right: 0.5px;
+
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+
+
+
+
+.bottom  h4{
+    font-size: 18px;
+    display: inline-block;
+    width: 80px;
+    padding: 5px;
+    margin-bottom:25px ;
+    margin-top: 25px;
+    color:#1b262c;
+    border:1px solid #1b262c;
+    
+}
+
+.btnbuy:hover{
+    color:#fff;
+    background-color: #1b262c;
+    transition: 0.5s;
+
+}
+
+
+
+#switch:checked ~ * .bottom{
+    width: 100%;
+    height:30%;
+    position: absolute;
+    bottom:0px;
+
+    text-align: center;
+    opacity: 1;
+
+   
+}
+
+#switch:checked ~ * .top{
+    border-radius: 0px;
+
+   
+}
+
+#switch{
+    display: none;
+}
+
+label{
+    display: block;
+
+    
+}
+
+
+
+@media (max-width: 576px) {  /*小螢幕 */
+
+
+
+    .point{
+        font-size: 35px;
+        position: absolute;
+        bottom: 30px;
+        margin: auto;
+        color:#fff;
+        
+    }
+
+
+
+}
+
+
+@media (min-width: 968px) {  /*大螢幕 */
+    .point{
+        font-size: 35px;
+        position: absolute;
+        bottom: 200px;
+        margin: auto;
+        color:#fff;
+        
+    }
+
+
+
+}
+
+.itemicon {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #b7d6e8;;
+    border-radius: 100%;
+    position: fixed;
+    right:5%;
+    bottom:5%;
+}
