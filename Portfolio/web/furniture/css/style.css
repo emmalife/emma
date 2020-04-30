@@ -1,0 +1,411 @@
+*{
+    /*border:1px solid ;*/
+    font-family: 'Josefin Sans', sans-serif;
+  
+
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+
+
+}
+
+
+
+.navbar .nav-item{
+    margin-right: 1rem;
+}
+
+.navjust{
+    transform: translateX(25%);
+}
+
+@media (max-width:480px){
+    .navjust{
+        transform: translateX(0%);
+    }
+}
+
+.logo{
+    margin-left: 1rem;
+}
+@media (max-width:480px){
+    .logo{
+        margin-left: 0rem;
+    }
+}
+  
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,#EAEBEF 50%,#D2E5F3 50%);
+}
+
+.topic{
+    padding: 18px;
+    padding-top: 25px;
+
+}
+
+.topic p{
+    padding: 10px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.topic p::before{
+    content: '';
+    width: 50px;
+    height: 20px;
+    border-bottom:2px solid #333;
+    position: absolute;
+    top:9px;
+    left:50%;
+    transform: translateX(-50%);   
+}
+
+.banner .container{
+
+    background-image: url("https://live.staticflickr.com/65535/49835577568_3e9d74eb11_o_d.png");
+    background-repeat: no-repeat;
+    background-size: 580px 500px;
+    background-position: right  center;
+
+}
+
+@media (max-width:480px){
+    .banner .container{
+        height: 71%;
+        background-size: 400px 344px;
+    }
+}
+   
+
+.banner .container .row{
+    margin-top: 15%;
+
+}
+
+.banner .container .row img{
+    position: absolute;
+    right:0px;
+
+}
+
+.bantext{
+    height: 50vh;
+}
+
+.bantext h1{
+    font-size: 50px;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-top: 80px;
+    font-weight: 600;
+    
+}
+
+.bantext p{
+    font-size: 18px;
+  
+    
+}
+
+.bantext h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    
+}
+
+.bantext small{
+    font-size: 15px;
+    color:rgb(158, 158, 158);
+    text-decoration: line-through;
+    margin-left: 8px;
+    
+}
+
+@media (max-width:480px){
+    .bantext h1{
+        font-size: 45px;
+        padding: 10px;
+        margin-top: 20px;
+        font-weight: 800;
+    }
+    
+    .bantext p{
+        font-size: 12px;
+        
+    }
+    
+    .bantext h3{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 800;
+        margin-left: 20px;
+        
+    }
+    
+    .bantext small{
+        font-size: 10px;
+        color:rgb(158, 158, 158);
+        text-decoration: line-through;
+        margin-left: 8px;
+        
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+.banner .container .row .banbtn{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+.banner .container .row .banbtn .btn1{
+    height: 60px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color:#333;
+    transition: 0.3s;
+
+}
+
+.banner .container .row .banbtn .btn1:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 10px 15px -15px #333;
+}
+
+
+.banner .container .row .banbtn .btn2{
+    height: 60px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #3D3F43;
+    color:#fff;
+    transition: 0.3s;
+
+}
+
+.banner .container .row .banbtn .btn2:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 10px 15px -15px #333;
+}
+
+.banner .container .row .banbtn p{
+    margin: auto;
+
+}
+  
+   @media (max-width:480px){
+    .banner .container .row .banbtn{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .banner .container .row .banbtn p{
+        font-size: 18px;
+
+    }
+
+    .banner .container .row .banbtn .btn1{
+        width: 190%;
+        font-size: 18px;
+        padding: 5px;
+        margin-top: 10px;
+    
+    }
+    
+    
+    .banner .container .row .banbtn .btn2{
+        width: 190%;
+        font-size: 18px;
+        padding: 5px;
+        margin-top: 10px;
+
+ 
+    
+    }
+
+    
+
+   }
+
+   /*--商品分類區--*/
+   .banner_1{
+       width: 100%;
+
+
+       background-color: #eaebef;
+
+   }
+
+   .banner_1 .row{
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+
+
+
+   .item{
+       background-color: #fff;
+       height: 450px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       transition: 0.3s;
+       margin: 25px;
+       
+   }
+
+   .item .pic{
+    padding: 30px;
+   }
+
+   .item h3{
+    margin: 0px;
+    font-size: 25px;
+    padding: 10px;
+   }
+
+   .item p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    padding: 10px;
+   }
+
+   .item .picmore{
+    margin-top: 20px;
+    width: 70%;
+    border:1px solid rgba(0,0,0,0.15);
+    transition: 0.5s;
+   }
+
+   .banner_1 .item:hover{
+       transform: translateY(-20px);
+       box-shadow:0px 10px 15px -15px #333 ;
+   }
+
+   .banner_1 .item:hover .picmore{
+        background-color: #333;
+        color:#fff;
+   }
+
+
+
+
+
+   /*品牌故事*/
+
+   .banner_2{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,#D2E5F3 70%,#EAEBEF 70%);
+}
+
+   .banner_2 .container{
+       height: 100%;
+           
+   }
+
+   .banner_2 .container .row{
+    height: 100%;
+    align-items: center;
+    
+}
+
+@media (max-width:480px){
+    .banner_2 .container .row{
+        height: 100%;
+        
+        
+    }
+    .banner_2 .container .row .col-sm-4{
+        transform: translateY(-25%);
+    }
+}
+
+
+
+.banner_2 .container .brandpic{
+    height: 100%;
+    text-align: center;
+      
+}
+
+.banner_2 .container .brandpic img{
+    width: 450px;
+    height: 450px;
+    transition: 0.5s;
+      
+}
+
+.banner_2 .container .brandpic img:hover{
+    transform: scale(1.1);
+      
+}
+
+@media (max-width:480px){
+    .banner_2 .container .brandpic img{
+        width: 250px;
+        height: 250px;
+          
+    }
+}
+
+.banner_2 .container .row .col-sm-4 h4{
+    font-size: 18px;
+}
+
+.banner_2 .container .row .col-sm-4 h3{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.brandbtn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.brandbtn h4{
+    width: 100px;
+    height: 40px;
+    border:1px solid #333;
+    margin: 0px;
+    line-height: 40px;
+    transition: 0.5s;
+}
+
+.brandbtn:hover h4{
+    background-color: #333;
+    color:#fff;
+    box-shadow: 0px 10px 15px -15px #333;
+}
+
+
+
+
