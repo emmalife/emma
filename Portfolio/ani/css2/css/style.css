@@ -238,11 +238,11 @@ label{
 }
 
 
-@media (min-width: 968px) {  /*大螢幕 */
+@media (min-width: 576px) {  /*大螢幕 */
     .point{
         font-size: 35px;
         position: absolute;
-        bottom: 200px;
+        bottom: 150px;
         margin: auto;
         color:#fff;
         

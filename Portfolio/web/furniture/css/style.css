@@ -410,4 +410,62 @@ html,body{
 
 
 
+@media (max-width:1142px)
+{
+    .item
+    {
+       height: 350px;
+    }
+}
+
+
+@media (max-width:991px)
+{
+    .item
+    {
+       height: 300px;
+    }
+
+    .item h3
+    {
+        font-size: 20px;
+    }
+
+    .navbar .nav-item
+    {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:767px)
+{
+    .item
+    {
+       height: 240px;
+    }
+    .item .pic
+    {
+        padding: 10px;
+    }
+    .item .picmore
+    {
+        width: 90px;
+    }
+}
+
+@media (max-width:575px)
+{
+    .item
+    {
+       height: 420px;
+    }
+    .item .pic
+    {
+        padding: 10px;
+    }
+    .item .picmore
+    {
+        width: 150px;
+    }
+}
 
