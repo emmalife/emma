@@ -1,0 +1,459 @@
+*{
+    /*border:1px solid ;*/
+    font-family: '微軟正黑體';
+    font-size: 10px;
+    position: relative;
+
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Josefin Sans', sans-serif;
+    
+
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  
+}
+
+header .banner
+{
+    width: 100%;
+    height: 80vh;
+    
+}
+
+@media (max-width:767px)
+{
+        header .banner
+    {
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+
+header .banner::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-image: url('https://blog.tripbaa.com/wp-content/uploads/2018/12/S__13885466.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px) opacity(90%);
+    background-attachment: fixed;
+}
+
+header .banner .container
+{
+    height: 100%;
+    
+}
+
+header .banner .container .row
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .banner .container .row .col-md-8
+{
+    height: 80%;
+    background:url('https://images.unsplash.com/photo-1518855706573-84de4022b69b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80'); 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-align: center;
+    padding: 3rem;
+    
+}
+
+header .banner .container .row .col-md-8::after
+{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 3px solid #fff;
+}
+    @media (max-width:991px)
+    {
+        header .banner .container .row .col-md-8::after
+        {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 50%;
+            top:50%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+   
+
+
+header .banner .container .row .col-md-8 h2
+{
+    font-size: 5rem;
+    color: #F49090;
+    font-weight: 800;
+    
+
+}
+
+header .banner .container .row .col-md-8 .toptext h4
+{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+header .banner .container .row .col-md-8 .toptext h4::after
+{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.2rem;
+    background-color: #fff;
+
+}
+
+header .banner .container .row .col-md-8 .bottomtext h4
+{
+    padding-bottom: 5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+   @media (max-width:1200px)
+   {
+    header .banner .container .row .col-md-8 .bottomtext h4
+    {
+        font-size: 3rem;
+    }
+   }
+
+header .banner .container .row .col-md-8 p
+{
+    font-size: 2rem;
+    color: #fff;
+   
+}
+
+header .banner .container .row .col-md-8 .toptext
+{
+    
+    padding-bottom: 13rem;
+    color: #fff;
+
+}
+
+
+header .banner .container .row .col-md-4
+{
+    height: 80%;
+    background-color: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header .banner .container .row .col-md-4 .toptext
+{
+    padding: 5rem;
+}
+
+header .banner .container .row .col-md-4 .toptext h4
+{
+    font-size: 3.5rem;
+    color: #333;
+}
+
+header .banner .container .row .col-md-4 .toptext h1
+{
+    font-size: 6rem;
+    color: #333;
+}
+
+header .banner .container .row .col-md-4 .banbtn
+{
+    margin: 2rem;
+    padding: 1rem 2rem;
+
+    cursor: pointer;
+   
+}
+
+header .banner .container .row .col-md-4 .banbtn::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 30%;
+    height: 100%;
+    background-color: #F49090;
+
+    transition: 0.3s;
+}
+
+header .banner .container .row .col-md-4 .banbtn p
+{
+    font-size: 2rem;
+    color:#333;
+    margin: 0rem;
+}
+
+header .banner .container .row .col-md-4 .banbtn:hover:before
+{
+    width: 100%;
+}
+
+#top8 .col-12
+{
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+}
+
+#top8 .col-12 h4
+{
+    font-size: 3.5rem;
+    color:#F49090;
+    margin-top: 5rem ;
+
+    font-weight: 600;
+    
+}
+
+#top8 .col-12 p
+{
+    font-size: 2rem;
+    color:#CCCCCC;
+    padding: 1rem;
+    
+}
+
+/*top 8 調整區*/
+
+#top8 .foodtop
+{
+    margin-top: 1.5rem;
+}
+
+#top8 .foodtop:after
+{
+    content: '';
+    position: absolute;
+    top:2%;
+    left:2%;
+    width:95%;
+    height: 96%;
+    border:1px solid rgba(73, 94, 82, 0.15);
+
+    box-shadow: 0px 3px 7px -5px #333;
+    
+}
+
+#top8 .foodtop .foodpic img
+{
+    padding: 2.5rem 1.5rem;
+    width: 320px;
+    height: 200px;
+}
+#top8 .foodtop .foodpic
+{
+    z-index: 3;
+}
+#top8 .foodtop .foodpic::after
+{
+
+    position: absolute;
+    right:12%;
+    bottom:10%;
+    width: 15px;
+    height: 30px;
+
+
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: "\f02e";
+    font-size: 3rem;
+    color:#FFC5C5;
+
+    transition: 0.2s;
+}
+
+#top8 .foodtop .foodpic:hover:after
+{
+    color:#FF6464;
+    transform: translateY(-5px);
+}
+
+#top8 .foodtop .fooddec .storename p
+{
+    padding-left: 1.5rem;
+    color:#EFAB89;
+    font-size: 1.5rem;
+
+    font-family: '微軟正黑體';
+}
+
+#top8 .foodtop .fooddec .storename h3
+{
+    padding-left: 1.5rem;
+    color:#495E52;
+    font-size: 2rem;
+    font-weight: 600;
+
+    font-family: '微軟正黑體';
+}
+
+#top8 .foodtop .soci
+{
+    margin: 2rem 0rem;
+}
+
+#top8 .foodtop .soci .foodrate
+{
+    margin-top: 4rem;
+}
+#top8 .foodtop .soci .foodrate p
+{
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+    color:#495E52;
+    font-size: 1.5rem;
+
+    margin: 0;
+
+}
+
+#top8 .foodtop .soci .foodlocate
+{
+    position: absolute;
+    right:0;
+    bottom:0;
+    
+}
+
+#top8 .foodtop .soci .foodlocate i
+{
+    font-size: 1.8rem;
+    color:#F49090;
+    padding-right: 1.5rem;
+
+}
+
+
+@media (max-width:767px)
+{
+    #top8 .foodtop:after
+    {
+        width:62%;
+        
+    }
+
+    #top8 .foodtop .foodpic::after
+    {
+
+        left:53%;
+    }
+    #top8 .foodtop .soci .foodlocate i
+    {
+        padding-right: 22rem;
+
+    }
+
+
+
+}
+
+@media (max-width:571px)
+{
+
+    #top8 .row
+    {
+        overflow: hidden;
+    }
+
+    .foodtop
+    {
+        min-width:533px;
+    }
+}
+
+@media (max-width:361px)
+{
+    #top8 .row
+    {
+        min-width:361px;
+    }
+    .container
+    {
+        min-width:361px;
+    }
+
+    .col-12
+    {
+        min-width:361px;
+    }
+}
+
+
+#find .findmore
+{
+    text-align: center;
+    height: 400px;
+    margin: 6rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://images.unsplash.com/photo-1419133203517-f3b3ed0ba2bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+
+#find .findmore h4
+{
+    font-size: 7rem;
+    color:#fff;
+
+}
+
+#find .findmore p
+{
+    font-size: 1.6rem;
+    color:#fff;
+
+}
+
+
+
+
+
