@@ -28,6 +28,15 @@ html,body{
     overflow: hidden;
 }
 
+@media (max-width:600px)
+{
+    .banner
+    {
+        font-size: 6rem;
+        background-position: top 20% center ;
+    }
+}
+
 .banner .probob
 {
     position: absolute;
@@ -231,6 +240,8 @@ html,body{
 
 }
 
+
+
 .prodec .row .proimg
 {
     text-align: center;
@@ -299,6 +310,14 @@ html,body{
     color:#b4daf536;
     font-size: 9rem;
 
+}
+
+@media (max-width:600px)
+{
+    .prodec .gallery h3::before
+    {
+        font-size: 6rem;
+    }
 }
 
 .gabanner
