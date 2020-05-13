@@ -1,0 +1,325 @@
+*{
+    /*border:1px solid ;*/
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 10px;
+    position: relative;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  
+
+}
+
+
+
+.banner
+{
+    width: 100%;
+    height: 100%;
+    background-color:#82b4d7 ;
+    background-image: url(../img/water.png);
+    background-position: top 30% center ;
+    background-attachment: fixed;
+
+    overflow: hidden;
+}
+
+.banner .probob
+{
+    position: absolute;
+    right:10%;
+    animation: showup 1s 1 both ,showup-1 0.8s infinite 0.5s alternate;
+    transition:0.3s ;
+}
+
+@keyframes showup
+{
+    0%{
+        transform: translateY(500PX) rotate(0deg);
+        
+    }
+    50%{
+        transform: translateY(0PX) rotate(5deg);  
+    }
+    100%{
+        transform:rotate(5deg);  
+    }
+}
+
+@keyframes showup-1
+{
+    0%{
+        transform: translateY(-20PX) rotate(5deg);
+        
+    }
+    100%{
+        transform: translateY(0PX) rotate(5deg);  
+    }
+
+}
+
+@media (max-width:1226px)
+{
+    .banner .probob{
+        right:5%;
+    }
+    .banner .probob img{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width:1040px)
+{
+    .banner .probob{
+        bottom:-25%;
+    }
+ 
+}
+
+
+
+.banner .bob1
+{
+    position: absolute;
+    left:15%;
+    top:15%;
+    animation: move 5s infinite ;
+}
+
+.banner .bob2
+{
+    position: absolute;
+    right:25%;
+    bottom:20%;
+    animation: move 3.5s infinite ;
+}
+
+.banner .bob3
+{
+    position: absolute;
+    left:20%;
+    bottom:20%;
+    animation: move 4s infinite ;
+}
+
+@keyframes move 
+{
+    0%{
+        transform: translatey(0);
+    }
+
+    100%{
+        transform: translatey(-30px);
+        opacity: 0;
+    }
+}
+
+
+.banner .bantext
+{
+    padding-top: 10%;
+    position: relative;
+    z-index: 50;
+    
+}
+
+@media (max-width:918px)
+{
+    .banner .bantext
+    {
+        padding-top: 20%;
+        
+    }
+}
+
+@media (max-width:810px)
+{
+    .banner .bantext
+    {
+        padding-top: 40%;
+        
+    }
+    .banner .probob {
+        display: none;
+    }
+
+    .banner .bantext .banimg{
+        min-width:300px;
+    }
+}
+
+
+
+.banner .bantext .banimg
+{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.banner .bantext .banatn
+{
+    position: absolute;
+    bottom:15%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.banner .bantext .banatn p
+{
+    font-size: 2rem;
+    font-weight: 800;
+    color:#87650e;
+    background-color: #fae003;
+    letter-spacing: 0.1rem;
+    padding: 0.8rem;
+
+    box-shadow:0.6rem 0.6rem #d4e5f1bd;
+    cursor: pointer;
+    transition: 0.3s;
+
+    animation: click 0.9s infinite;
+}
+
+@keyframes click
+{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.banline
+{
+    width: 100%;
+    position: absolute;
+    bottom:0px;
+    
+}
+
+
+.prodec .protext h3
+{
+    font-size: 4.5rem;
+    color:#5fa1d0;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    z-index: 3;
+    padding: 5rem 0rem 1rem;
+
+}
+
+.prodec .protext h3::before
+{
+    content: 'trending';
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translateX(-50%);
+    color:#b4daf536;
+    font-size: 9rem;
+
+}
+
+.prodec .row .proimg
+{
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+.prodec .row .probrand
+{
+    text-align: center;
+    color:#333;
+
+
+} 
+.prodec .row .probrand h2
+{
+    padding: 1rem 0rem ;  
+}
+
+
+
+.prodec .row .probrand p
+{
+    border:1px solid #5fa1d0;
+    color: #5fa1d0;
+    font-size: 1.6rem;
+    margin: 1rem 0px 1rem;
+    padding: 1rem 2rem;
+
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+   
+}
+
+.prodec .row .probrand i
+{
+    font-size: 2rem;
+}
+
+.prodec .row .probrand p:hover
+{
+    background-color: #5fa1d0;
+    color: #fff;
+}
+
+.prodec .gallery h3
+{
+    font-size: 4.5rem;
+    color:#5fa1d0;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    z-index: 3;
+    padding: 5rem 0rem 1rem;
+
+}
+
+.prodec .gallery h3::before
+{
+    content: 'shop now';
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translateX(-50%);
+    color:#b4daf536;
+    font-size: 9rem;
+
+}
+
+.gabanner
+{
+    text-align: center;
+    padding: 4rem 0rem 2rem;
+}
+
+.gabanner .img-fluid,.gabanlist .img-fluid
+{
+    width: 95%;
+}
+
+.gabanlist{
+    margin: 0px;
+}
+
+.gabanlist .col-md-4 img
+{
+    padding: 2rem 1rem;
+    cursor: pointer;
+
+}
+
