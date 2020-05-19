@@ -1,0 +1,334 @@
+*{
+    /*border:1px solid ;*/
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+
+    font-family: 'Contrail One', cursive;
+ 
+}
+
+
+
+.banner
+{
+    width: 100%;
+    height: 100vh;
+    min-width:480px;
+}
+@media (max-width:767px){
+    .banner
+   {
+    width: 100%;;
+    min-width:480px;
+   }   
+}
+
+.bgimg_1
+{
+    background: linear-gradient(150deg,#9457ea2f 50%,#667eea2f 50%),url(../img/bg1.jpg) center;
+}
+
+.banner .container
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner .container .row
+{
+    height: 80%;
+}
+
+.banner .container .row .col-md-6 .item1
+{
+    background-image: linear-gradient(45deg, #667eea 0%, #9457ea 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 22;
+
+    min-width:460px;
+    min-height:700px;
+}
+
+.banner .container .row .col-md-6 .item1::before
+{
+    content: 'RUN';
+    position: absolute;
+    top:10%;
+    left:15%;
+    color:#fff;
+    font-size: 20rem;
+    letter-spacing: 1rem;
+
+}
+.banner .container .row .col-md-6 .item1 .bannerimg
+{
+    position: absolute;
+    width: 487px;
+    height: 323px;
+}
+.banner .container .row .col-md-6 .item1 .bannerimg img
+{
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.banner .container .row .col-md-6 .item1 .bannerimg .active
+{
+    opacity: 1;
+}
+
+.banner .container .row .control
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:8%;
+    left:50%;
+    transform: translateX(-50%);
+    
+}
+
+.banner .container .row .control i
+{
+    font-size: 4rem;
+    color:#fff;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.banner .container .row .dec
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.banner .container .row .col-md-6 .item1_dec
+{
+    width: 100%;
+    height: 95%;
+    background-color: #fff;
+    margin-left: -10%;
+
+    border-radius: 1rem;
+    padding: 5rem;
+    padding-left: 6rem;
+
+    min-width:460px;
+
+}
+
+@media (max-width:767px){
+    .banner .container .row .col-md-6 .item1_dec
+    {
+        margin-left: 0rem;
+    }
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_text div
+{
+    display: none;
+    transition: 0.3s;
+
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_text .active
+{
+    display: initial;
+
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_text h1
+{
+    font-size: 4rem;
+    font-family: 'Rubik', sans-serif;
+    color:#494949;
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_text h3
+{
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 0.5rem;
+    color:#494949;
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_text p
+{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-family: '微軟正黑體';
+    margin-top: 2rem;
+    color:#b7b7b7;
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_size p
+{
+    font-size: 1.8rem;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color:#a3a3a3;
+}
+.banner .container .row .col-md-6 .item1_dec .dec_size .size_box
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_size .size_box button
+{
+    font-size: 2rem;
+    font-family: '微軟正黑體';
+    font-weight: 600;
+    color:#a3a3a3;
+    display: inline-block;
+    padding: 1rem 3rem;
+    height: 52px;
+    margin-right: 1rem;
+    background-color: #fff;
+
+    border:1px solid #b7b7b7;  
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_size .size_box button:last-of-type
+{
+    margin-right: 0rem;
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_size .size_box button:focus
+{
+    background-color: #494949;
+    color:#fff;
+    border:0px solid #b7b7b7;
+}
+
+
+
+.banner .container .row .col-md-6 .item1_dec .dec_number p
+{
+    font-size: 1.8rem;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color:#a3a3a3;
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_number .number_box
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 52px;
+    border:1px solid #b7b7b7; 
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_number .number_box span
+{
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    color:#a3a3a3;
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_number .number_box i
+{
+    padding: 2rem;
+    color: #a3a3a3;
+    font-size: 1rem;
+    
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_number .number_box .minus
+{
+    border-right:1px solid #b7b7b7;
+    padding-right: 4rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_number .number_box .minus:active i
+{
+    color:#494949;
+    
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_number .number_box .add
+{
+    border-left:1px solid #b7b7b7;
+    padding-left: 4rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.banner .container .row .col-md-6 .item1_dec .dec_number .number_box .add:active i
+{
+    color:#494949;
+}
+
+.banner .container .row .col-md-6 .item1_dec .button
+{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #ef65ab;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif,'微軟正黑體';
+    border-style: none;
+    text-align: center;
+
+    transition: 0.3s;
+
+}
+
+
+/*加入購物車跑的動畫*/
+.check_summit
+{
+    font-size: 0rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border-bottom:3px solid #ef65ab;
+    border-right:3px solid #ef65ab;
+    border-left:3px solid #ef65ab;
+    border-top:0px solid #ef65ab;
+    background-color: #fff;
+    animation: circle 0.5s 6;
+
+    margin-top: 100px;
+}
+
+
+@keyframes circle
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+

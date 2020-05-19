@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>商品輪播</title>
+    <!-- Bootstrap -->
+   <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+    integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Racing+Sans+One&family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    
+ 
+
+</head>
+
+<body>
+
+    <div class="banner bgimg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="item1">
+
+                            <!--商品圖區-->
+                            <div class="bannerimg" id="slideshow">
+                                <img class="active" src="img\2.png" width="487px" height="323px" alt="">
+                                <img src="img\1.png" width="487px" height="323px" alt="">
+                                <img src="img\3.png" width="487px" height="323px" alt="">
+                            </div>
+
+                        <!--左右控制區-->
+                        <div class="control">
+                            <div class="lefticon"  onclick="preslide();pretext();">
+                                <i class="far fa-caret-square-left"></i>
+                            </div>
+                            <div class="righticon" onclick="nextslide();nexttext();">
+                                <i class="far fa-caret-square-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6 dec">
+                    <div class="item1_dec">
+
+                        <!--商品描述區-->
+                        <div class="dec_text" id="slideshowtext">
+
+                            <div class="active">
+                                <h1>Nike Odyssey React</h1>
+                                <h3>$3,199</h3>
+                                <p>泡綿緩震系統靈敏卻輕盈、耐久但柔軟<br>
+                                    看似互斥的機能造就出色驅動感<br>
+                                    不只增強往前邁進的感受，更讓跑步饒富樂趣</p>
+                            </div>
+
+                            <div>
+                                <h1>Nike Free RN 5.0</h1>
+                                <h3>$3,500</h3>
+                                <p>穩固的鞋帶系統搭配無縫設計服貼合腳靈活暢動<br>
+                                   比以往版本更輕盈貼地<br>
+                                   讓你體驗赤足般的短跑新感受。</p>
+                            </div>
+
+                            <div>
+                                <h1>Nike Air Zoom</h1>
+                                <h3>$3,199</h3>
+                                <p>超人氣跑鞋專為滿足你的需求而設計<br>
+                                    以進化版 Zoom Air 氣墊<br>
+                                    方便穿脫的 FlyEase 鞋帶系統，帶你躍向未來。</p>
+                            </div>
+
+                        </div>
+
+
+                        <!--商品尺寸區-->
+                        <div class="dec_size">
+                            <p>Size</p>
+                            <div class="size_box">
+                                 <button type="radio" class="sizebtn change" onclick="change();" >23</button>
+                                 <button type="radio" class="sizebtn" >24</button>
+                                 <button type="radio" class="sizebtn" >25</button>
+                                 <button type="radio" class="sizebtn" >26</button>
+                            </div>
+                        </div>
+
+                        <!--商品購買數量區-->
+                        <div class="dec_number">
+                            <p>Amount</p>
+                            <div class="number_box">
+
+                                <div class="minus">
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                                <div class="number">
+                                    <span class="num">0</span>
+                                </div>
+                                <div class="add">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--加入購物車-->
+                        <div class="checkbtn text-center">
+                        <button type="button" id="check" class="button">Add to cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+ 
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+ <script type="text/javascript">
+
+    //購買數量 + / -
+    var num=0;
+
+    $(".minus").click(
+        function(){
+            num=num-1;
+            if(num>=0)
+            $(".num").text(num);
+            else{
+                num=0;
+            }
+        }
+    );
+
+    $(".add").click(
+        function(){
+            num=num+1;
+            if(num>=0)
+            $(".num").text(num);
+            else{
+                num=0;
+            }
+        }
+    );
+
+    //加入購物車互動
+
+    $("#check").click(
+        function(){
+            if(num>0){
+                $("#check").removeClass("button");
+                setTimeout(send,0);
+                setTimeout(send2,1000);
+                setTimeout(send3,2000);
+                setTimeout(send5,2000);
+            }else{
+                $("#check").text("尚未選擇喔");
+                setTimeout(send4,1000);
+            }
+        }
+        
+ 
+    );
+
+    function send(){
+        $("#check").addClass("check_summit");
+       
+    }
+
+    function send2(){
+        $("#check").removeClass("check_summit");
+        $("#check").addClass("button");
+        $("#check").text("Thank you!");
+    }
+
+    function send3(){
+        $("#check").text("Add to cart");
+       
+    }
+
+    function send4(){
+        $("#check").text("Add to cart");
+       
+    }
+
+    function send5(){
+        num=0;
+        $(".num").text(0);
+       
+    }
+    
+ 
+    
+    // control 按鈕轉換設定
+
+    //商品圖轉換
+    var slideshow=document.getElementById("slideshow");
+    var slide=slideshow.getElementsByTagName("img");
+    var index=0;
+
+    function nextslide(){
+        slide[index].classList.remove("active");
+        index=(index+1)%slide.length;
+        slide[index].classList.add("active");
+    }
+
+    function preslide(){
+        slide[index].classList.remove("active");
+        index=(index-1+slide.length)%slide.length;
+        slide[index].classList.add("active");
+    }
+
+    //文字說明轉換
+    var slideshowtext=document.getElementById("slideshowtext");
+    var slidetext=slideshowtext.getElementsByTagName("div")
+    var i=0;
+
+    function nexttext(){
+        slidetext[i].classList.remove("active");
+        i=(i+1)%slidetext.length;
+        slidetext[i].classList.add("active");
+    }
+
+    function pretext(){
+        slidetext[i].classList.remove("active");
+        i=(i-1+slidetext.length)%slidetext.length;
+        slidetext[i].classList.add("active");
+    }
+
+   
+   
+
+
+    
+    
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
