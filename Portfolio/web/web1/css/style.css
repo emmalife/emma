@@ -43,7 +43,7 @@
     height: 80%;
 }
 
-.banner .container .row .col-md-6 .item1
+.banner .container .row .col-lg-6 .item1
 {
     background-image: linear-gradient(45deg, #667eea 0%, #9457ea 100%);
     width: 100%;
@@ -62,38 +62,48 @@
 }
 
 @media (max-width:991px){
-    .banner .container .row .col-md-6 .item1
+
+   .banner .container .row .col-lg-6 .item1_dec
    {
-    margin-left: -110px;
-   }   
+       margin-left: 0!important;
+   }  
 }
 @media (max-width:767px){
-    .banner .container .row .col-md-6 .item1
+    .banner .container .row .col-lg-6 .item1
    {
     margin-left: 0px;
    }   
 }
 
-@media (max-width:900px){
-    .banner .container .row .col-md-6
+@media (max-width:910px){
+    .banner .container .row .col-lg-6
     {
-    margin-right: -40px;
+    margin-right: 0px;
     }
-    .banner .container .row .col-md-6 .item1
+    .banner .container .row .col-lg-6 .item1
    {
     min-width:430px;
    }   
-   .banner .container .row .col-md-6 .item1 .bannerimg img
+   .banner .container .row .col-lg-6 .item1 .bannerimg img
    {
        transform: scale(0.8);
    }
-   .banner .container .row .col-md-6 .item1::before
+   .banner .container .row .col-lg-6 .item1::before
    {
     font-size: 18rem;
    }
+   .banner .container .row .col-lg-6 .item1_dec
+   {
+       margin-left: 0rem;
+   }
+   .banner .container .row .col-lg-6 .item1
+   {
+    margin-left: 0px;
+   }   
 }
 
-.banner .container .row .col-md-6 .item1::before
+
+.banner .container .row .col-lg-6 .item1::before
 {
     content: 'RUN';
     position: absolute;
@@ -104,20 +114,20 @@
     letter-spacing: 1rem;
 
 }
-.banner .container .row .col-md-6 .item1 .bannerimg
+.banner .container .row .col-lg-6 .item1 .bannerimg
 {
     position: absolute;
     width: 487px;
     height: 323px;
 }
-.banner .container .row .col-md-6 .item1 .bannerimg img
+.banner .container .row .col-lg-6 .item1 .bannerimg img
 {
     position: absolute;
     opacity: 0;
     transition: 0.3s;
 }
 
-.banner .container .row .col-md-6 .item1 .bannerimg .active
+.banner .container .row .col-lg-6 .item1 .bannerimg .active
 {
     opacity: 1;
 }
@@ -148,7 +158,7 @@
 }
 
 
-.banner .container .row .col-md-6 .item1_dec
+.banner .container .row .col-lg-6 .item1_dec
 {
     width: 100%;
     height: 95%;
@@ -164,33 +174,33 @@
 }
 
 @media (max-width:767px){
-    .banner .container .row .col-md-6 .item1_dec
+    .banner .container .row .col-lg-6 .item1_dec
     {
         margin-left: 0rem;
     }
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_text div
+.banner .container .row .col-lg-6 .item1_dec .dec_text div
 {
     display: none;
     transition: 0.3s;
 
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_text .active
+.banner .container .row .col-lg-6 .item1_dec .dec_text .active
 {
     display: initial;
 
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_text h1
+.banner .container .row .col-lg-6 .item1_dec .dec_text h1
 {
     font-size: 4rem;
     font-family: 'Rubik', sans-serif;
     color:#494949;
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_text h3
+.banner .container .row .col-lg-6 .item1_dec .dec_text h3
 {
     font-size: 3rem;
     font-family: 'Rubik', sans-serif;
@@ -198,7 +208,7 @@
     color:#494949;
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_text p
+.banner .container .row .col-lg-6 .item1_dec .dec_text p
 {
     font-size: 1.8rem;
     line-height: 3rem;
@@ -207,7 +217,7 @@
     color:#b7b7b7;
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_size p
+.banner .container .row .col-lg-6 .item1_dec .dec_size p
 {
     font-size: 1.8rem;
     font-family: 'Rubik', sans-serif;
@@ -215,13 +225,13 @@
     margin-bottom: 0.5rem;
     color:#a3a3a3;
 }
-.banner .container .row .col-md-6 .item1_dec .dec_size .size_box
+.banner .container .row .col-lg-6 .item1_dec .dec_size .size_box
 {
     display: flex;
     justify-content: space-around;
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_size .size_box button
+.banner .container .row .col-lg-6 .item1_dec .dec_size .size_box button
 {
     font-size: 2rem;
     font-family: '微軟正黑體';
@@ -239,12 +249,12 @@
 
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_size .size_box button:last-of-type
+.banner .container .row .col-lg-6 .item1_dec .dec_size .size_box button:last-of-type
 {
     margin-right: 0rem;
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_size .size_box button:focus
+.banner .container .row .col-lg-6 .item1_dec .dec_size .size_box button:focus
 {
     background-color: #494949;
     color:#fff;
@@ -253,7 +263,7 @@
 
 
 
-.banner .container .row .col-md-6 .item1_dec .dec_number p
+.banner .container .row .col-lg-6 .item1_dec .dec_number p
 {
     font-size: 1.8rem;
     font-family: 'Rubik', sans-serif;
@@ -262,7 +272,7 @@
     color:#a3a3a3;
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_number .number_box
+.banner .container .row .col-lg-6 .item1_dec .dec_number .number_box
 {
     display: flex;
     justify-content: space-around;
@@ -271,14 +281,14 @@
     border:1px solid #b7b7b7; 
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_number .number_box span
+.banner .container .row .col-lg-6 .item1_dec .dec_number .number_box span
 {
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
     color:#a3a3a3;
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_number .number_box i
+.banner .container .row .col-lg-6 .item1_dec .dec_number .number_box i
 {
     padding: 2rem;
     color: #a3a3a3;
@@ -286,7 +296,7 @@
     
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_number .number_box .minus
+.banner .container .row .col-lg-6 .item1_dec .dec_number .number_box .minus
 {
     border-right:1px solid #b7b7b7;
     padding-right: 4rem;
@@ -294,13 +304,13 @@
     user-select: none;
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_number .number_box .minus:active i
+.banner .container .row .col-lg-6 .item1_dec .dec_number .number_box .minus:active i
 {
     color:#494949;
     
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_number .number_box .add
+.banner .container .row .col-lg-6 .item1_dec .dec_number .number_box .add
 {
     border-left:1px solid #b7b7b7;
     padding-left: 4rem;
@@ -308,12 +318,12 @@
     user-select: none;
 }
 
-.banner .container .row .col-md-6 .item1_dec .dec_number .number_box .add:active i
+.banner .container .row .col-lg-6 .item1_dec .dec_number .number_box .add:active i
 {
     color:#494949;
 }
 
-.banner .container .row .col-md-6 .item1_dec .button
+.banner .container .row .col-lg-6 .item1_dec .button
 {
     width: 200px;
     height: 50px;
