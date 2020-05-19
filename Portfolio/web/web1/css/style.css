@@ -74,6 +74,25 @@
    }   
 }
 
+@media (max-width:900px){
+    .banner .container .row .col-md-6
+    {
+    margin-right: -40px;
+    }
+    .banner .container .row .col-md-6 .item1
+   {
+    min-width:430px;
+   }   
+   .banner .container .row .col-md-6 .item1 .bannerimg img
+   {
+       transform: scale(0.8);
+   }
+   .banner .container .row .col-md-6 .item1::before
+   {
+    font-size: 18rem;
+   }
+}
+
 .banner .container .row .col-md-6 .item1::before
 {
     content: 'RUN';
@@ -322,7 +341,6 @@
     font-size: 0rem;
     width: 40px;
     height: 40px;
-    outline: none;
     border-radius: 20px;
     border-bottom:3px solid #ef65ab;
     border-right:3px solid #ef65ab;
@@ -332,6 +350,7 @@
     animation: circle 0.5s 6;
 
     margin-top: 100px;
+    outline: none;
     
 
 }
