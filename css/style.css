@@ -135,16 +135,20 @@ html,body{
 
 .skilldec h5{
     padding: 0px;
-    font-family: 'Baloo Tamma 2';
-    
+    font-family: 'Baloo Tamma 2','Noto Sans TC';
+    color:#72a7d3;
+    font-weight: bold;
 
 }
 
-.skillbar{
-    border:1px solid #333;
+.skillbar h5{
+    
     width: 100%;
     height: 22px;
-    border-radius: 20px;
+    font-family: 'Baloo Tamma 2','Noto Sans TC';
+    color:#333;
+    font-weight: 300;
+    
 }
 
 .bardec{
@@ -184,10 +188,6 @@ html,body{
 
 }
 
-.featuredbanner h1
-{
-   
-}
 
 
 
